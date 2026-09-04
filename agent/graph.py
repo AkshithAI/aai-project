@@ -249,7 +249,7 @@ def finalize_node(state: AgentState) -> dict:
 
     step_summaries = []
     for s in completed:
-        step_summaries.append(f"  Step {s['step_index']}: {s['tool_name']} → {s['status']}")
+        step_summaries.append(f"  Step {s['step_index']}: {s['tool_name']} -> {s['status']}")
 
     full_result = summary + "\n" + "\n".join(step_summaries) if step_summaries else summary
 
